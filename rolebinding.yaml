@@ -3,11 +3,14 @@ kind: Rolebinding
 metadata:
   name: roles
   namespace: bl46p
+roleRef:
+  kind: Role
+  name: pod-reader
+  apiGroup: ""
 subjects:
   - kind: ServiceAccount
     name: bl46p-priv
     namespace: bl46p
-roleRef:
-  kind: Role
-  name: pod-observer
-  apiGroup: ""
+  - kind: user
+    name: bl46p-priv
+    namespace: bl46p
