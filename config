@@ -7,9 +7,14 @@ clusters:
 contexts:
 - context:
     cluster: default
+    namespace: bl46p
+    user: default
+  name: bl46p
+- context:
+    cluster: default
     user: default
   name: default
-current-context: default
+current-context: bl46p
 kind: Config
 preferences: {}
 users:
