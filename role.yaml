@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Role
+metadata:
+  name: pod-observer
+  namespace: bl47p
+rules:
+- apiGroups: ["*"]
+  resources: ["pods"]
+  verbs: ["get", "watch", "list"]

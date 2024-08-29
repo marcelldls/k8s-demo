@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Rolebinding
+metadata:
+  name: roles
+  namespace: bl47p
+subjects:
+  - kind: ServiceAccount
+    name: bl46p-priv
+    namespace: bl47p
+roleRef:
+  kind: Role
+  name: pod-observer
+  apiGroup: ""
